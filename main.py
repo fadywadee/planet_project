@@ -86,7 +86,9 @@ async def predict(file: UploadFile = File(...)):
 
 
     """
-
+@app.get("/")
+def read_root():
+    return {"message": "Plant Disease API is running!"}
 
 
 
